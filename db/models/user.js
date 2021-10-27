@@ -30,11 +30,12 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     city: {
+      allowNull: false,
       type: DataTypes.TEXT,
     },
-    raiting: {
+    rating: {
       type: DataTypes.INTEGER,
-      default: 0,
+      defaultValue: 0,
     },
   }, {
     sequelize,
