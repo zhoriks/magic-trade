@@ -28,9 +28,10 @@ module.exports = {
         },
       },
       city: {
+        allowNull: false,
         type: Sequelize.TEXT,
       },
-      raiting: {
+      rating: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

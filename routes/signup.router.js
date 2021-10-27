@@ -2,9 +2,9 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const { User } = require('../db/models');
 
-router.route('/signup')
+router.route('/')
   .get((req, res) => {
-    res.send({ mes: 'страница с формой регистрации' });
+    res.render('signupForm');
   })
   .post(async (req, res) => {
     const {
