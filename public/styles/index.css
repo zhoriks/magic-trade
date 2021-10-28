@@ -1,0 +1,11 @@
+.container-my {
+  max-width: 325px;
+  margin: 15px;
+}
+
+.container-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
