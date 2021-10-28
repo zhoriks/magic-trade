@@ -7,11 +7,12 @@ router.route('/')
     res.render('signupForm');
   })
   .post(async (req, res) => {
+    console.log(req.body);
     const {
-      login,
-      password,
-      email,
-      city,
+      signupUsername: login,
+      signupPassword: password,
+      signupEmail: email,
+      signupCity: city,
     } = req.body;
 
     const hash = await bcrypt.hash(password, 10);
@@ -21,7 +22,8 @@ router.route('/')
       email,
       city,
     });
-    res.json(user);
+    res.redirect('/');
+    // добавить окно успешной регистрации
   });
 
 module.exports = router;
