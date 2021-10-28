@@ -7,15 +7,17 @@
   <p class="viewpost-text">City: <span>{{post.city}}</span></p>
   {{#if user}}
     {{#if isSame}}
-      <button class="btn btn-warning">Edit</button>
-      <button class="btn btn-warning">Delete</button>
+  <a href="{{post.id}}/edit">
+  <button class="btn btn-warning">Edit</button>
+  </a>
+  <button class="btn btn-warning">Delete</button>
     {{else}}
       <form action="/cart/{{post.id}}" method="post" >
         <button type="submit" class="btn btn-warning">Add to cart</button>
       </form>
     {{/if}}
   {{else}}
-  <a href="/signup"><button class="btn btn-warning">Sign up</button></a>
+    <a href="/signup"><button class="btn btn-warning">Sign up</button></a>
   {{/if}}
   </div>
 </div>

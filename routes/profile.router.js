@@ -9,22 +9,11 @@ router
       userPosts = await Post.findAll({ where: { id: req.session.user.id }, raw: true });
     } catch (error) {
       return res.render('error', {
-        message: 'Ошибки при получении данных карточки',
+        message: 'Ошибка при получении карточек пользователя',
         error: {},
       });
     }
     return res.render('testingRoutes', { userPosts }); // Указать имя ХБС
-  })
-
-  .put(async (req, res) => {
-    let userPost;
-    try {
-
-    } catch (error) {
-
-    }
-  })
-
-// Добавить ПУТ и ДЕЛИТ
+  });
 
 module.exports = router;
