@@ -1,5 +1,0 @@
-localhost:3000/
-localhost:3000/:userId/profile
-localhost:3000/:userId/:postId/
-
-
