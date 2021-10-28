@@ -1,0 +1,16 @@
+.postview-image {
+  
+  width: auto;
+  height: 560px;
+}
+
+.viewPost {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 1000px;
+}
+
+.viewpost-text {
+  font-size: 32px;
+}
