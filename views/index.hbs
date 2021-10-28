@@ -1,131 +1,14 @@
 <div class="container-body">
-  <a href="">
+  {{#each posts}}
+  <a class="card-link" href="/post/{{this.id}}">
     <div class="container container-my">
       <div class="card shadow-sm">
-        <div class="card-body">
-          <img src="images/postPicture-1635410960381" alt="">
-          <p class="card-text">Труп рыцаря</p>
+        <div class="card-body"> 
+          <img src="images/{{this.picturePath}}" alt="">
+          <p class="card-text">{{this.title}}</p>
         </div>
       </div>
     </div>
   </a>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <var>
-    <div class="container container-my">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <img src="images/postPicture-1635410960381" alt="">
-          <p class="card-text">Труп рыцаря</p>
-          <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-        </div>
-      </div>
-    </div>
-  </var>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
-  <div class="container container-my">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <img src="images/postPicture-1635410960381" alt="">
-        <p class="card-text">Труп рыцаря</p>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-      </div>
-    </div>
-  </div>
+  {{/each}}
 </div>

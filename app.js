@@ -41,6 +41,7 @@ app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/signin', signinRouter);
 app.use('/logout', logoutRouter);
+app.use('/post', viewpostRouter);
 app.use('/post', postRouter);
 app.use('/post', viewpostRouter); // Роутер на конкретный пост
 app.use('/profile', profileRouter); // Роутер на профиль
