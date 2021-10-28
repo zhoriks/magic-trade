@@ -9,6 +9,7 @@ const signupRouter = require('./routes/signup.router');
 const signinRouter = require('./routes/signin.router');
 const logoutRouter = require('./routes/logout.router');
 const postRouter = require('./routes/post.router');
+const viewpostRouter = require('./routes/viewpost.router');
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
@@ -39,6 +40,7 @@ app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/signin', signinRouter);
 app.use('/logout', logoutRouter);
+app.use('/post', viewpostRouter);
 app.use('/post', postRouter);
 
 app.listen(PORT, () => {
