@@ -1,12 +1,21 @@
 <div class="viewPost">
-  <img src="/images/postPicture-1635410960381" class="postview-image" alt="">
+  <img src="/images/{{post.picturePath}}" class="postview-image" alt="">
   <div>
-  <p class="viewpost-text">Name: <span>Мертвый рыцарь</span></p>
-  <p class="viewpost-text">Danage: <span>800</span></p>
-  <p class="viewpost-text">Cost: <span>320</span></p>
-  <p class="viewpost-text">City: <span>320</span></p>
+  <p class="viewpost-text">Name: <span>{{post.title}}</span></p>
+  <p class="viewpost-text">Damage: <span>{{post.damage}}</span></p>
+  <p class="viewpost-text">Cost: <span>{{post.cost}}</span></p>
+  <p class="viewpost-text">City: <span>{{post.city}}</span></p>
   {{#if user}}
-  <button class="btn btn-warning">Contact the seller</button>
+    {{#if isSame}}
+      <button class="btn btn-warning">Edit</button>
+      <button class="btn btn-warning">Delete</button>
+    {{else}}
+      <form action="/cart/{{post.id}}" method="post" >
+        <button type="submit" class="btn btn-warning">Add to cart</button>
+      </form>
+    {{/if}}
+  {{else}}
+  <a href="/signup"><button class="btn btn-warning">Sign up</button></a>
   {{/if}}
   </div>
 </div>
