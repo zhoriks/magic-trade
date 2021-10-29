@@ -10,8 +10,10 @@ const signinRouter = require('./routes/signin.router');
 const logoutRouter = require('./routes/logout.router');
 const postRouter = require('./routes/post.router');
 const cartRouter = require('./routes/cart.router');
+const searchRouter = require('./routes/search.router');
 const viewpostRouter = require('./routes/viewpost.router'); // Роутер на конкретный пост
 const profileRouter = require('./routes/profile.router'); // Роутер на профиль
+const deleteCard = require('./routes/deleteCard.router'); // Удаление карточки
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
@@ -44,8 +46,10 @@ app.use('/signin', signinRouter);
 app.use('/logout', logoutRouter);
 app.use('/post', postRouter);
 app.use('/cart', cartRouter);
+app.use('/search', searchRouter);
 app.use('/post', viewpostRouter); // Роутер на конкретный пост
 app.use('/profile', profileRouter); // Роутер на профиль
+app.use('/del', deleteCard);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
