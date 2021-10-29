@@ -5,18 +5,16 @@ router
   .route('/:postId')
   .get(async (req, res) => {
     let post;
-    let userEmail;
     let isSame;
     try {
       post = await Post.findOne({ where: { id: req.params.postId }, raw: true, include: User });
-      userEmail = post['User.email'];
     } catch (error) {
       return res.render('error', {
         message: 'Ошибки при получении данных карточки',
         error: {},
       });
     }
-
+  
     if (req.session.user?.id === post.UserId) {
       isSame = true;
       return res.render('viewPost', {

@@ -9,6 +9,7 @@ const signupRouter = require('./routes/signup.router');
 const signinRouter = require('./routes/signin.router');
 const logoutRouter = require('./routes/logout.router');
 const postRouter = require('./routes/post.router');
+const cartRouter = require('./routes/cart.router');
 const viewpostRouter = require('./routes/viewpost.router'); // Роутер на конкретный пост
 const profileRouter = require('./routes/profile.router'); // Роутер на профиль
 
@@ -41,8 +42,8 @@ app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/signin', signinRouter);
 app.use('/logout', logoutRouter);
-app.use('/post', viewpostRouter);
 app.use('/post', postRouter);
+app.use('/cart', cartRouter);
 app.use('/post', viewpostRouter); // Роутер на конкретный пост
 app.use('/profile', profileRouter); // Роутер на профиль
 
