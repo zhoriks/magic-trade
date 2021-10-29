@@ -1,0 +1,23 @@
+<form name="search-form" class="post-form" method="post" action="/search">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Card name</label>
+    <input name="searchCardname" type="text" class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Cost</label>
+    <input name="searchCost" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Damage</label>
+    <input name="searchDamage" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">City</label>
+    <select name="searchCity" class="form-control" id="exampleInputPassword1">
+      <option disabled selected>Select city</option>
+      <option value="Moscow">Moscow</option>
+      <option value="Saint-Petersburg">Saint-Petersburg</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
