@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "root",
+    "username": "elbrus",
     "password": null,
     "database": "magic-trade",
     "host": "127.0.0.1",

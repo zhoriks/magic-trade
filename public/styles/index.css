@@ -1,0 +1,22 @@
+.container-my {
+  max-width: 325px;
+  margin: 15px;
+}
+
+.container-body {
+  min-height: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
