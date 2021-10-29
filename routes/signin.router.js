@@ -22,8 +22,7 @@ router.route('/')
     if (user) {
       const isSame = await bcrypt.compare(password, user.password);
       if (isSame) {
-        req.session.user = { username: user.login, id: user.id };
-        req.session.cart = { cart: [] };
+        req.session.user = { username: user.login, id: user.id, cart: [] };
         return res.redirect('/');
       }
     } else return res.redirect('/');

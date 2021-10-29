@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "vladimirchugunov",
-    "password": "98754321VOVAVVV",
-    "database": "volodya",
+    "username": "elbrus",
+    "password": null,
+    "database": "magic-trade",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
