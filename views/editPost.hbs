@@ -1,4 +1,3 @@
-
 <form name="editForm" action="/post/{{postId}}/edit" class="post-form" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Card name</label>
@@ -14,10 +13,8 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">City</label>
-    <select name="postCity" value="{{city}}" required class="form-control" id="exampleInputPassword1">
-      <option disabled>Select city</option>
-      <option value="moscow">Moscow</option>
-      <option value="spb">Saint-Petersburg</option>
+    <select name="postCity" value="{{city}}" required class="form-control" id="formSelectCities">
+      <option disabled selected>Select city</option>
     </select>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>

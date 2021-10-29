@@ -21,5 +21,6 @@ if (document.editForm) {
       }),
     });
     const responseJson = await response.json();
+    window.location.href = `http://localhost:3000/profile/${responseJson.userId}`;
   });
 }

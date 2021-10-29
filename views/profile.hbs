@@ -1,0 +1,37 @@
+
+<div class="profile-container-body">
+
+<div class="card" style="width: 18rem;">
+  <img src="/images/oleg.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{users.login}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{users.email}}</li>
+    <li class="list-group-item">{{users.city}}</li>
+  </ul>
+  {{!-- <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div> --}}
+</div>
+</div>
+
+
+<div class="profile-container-body">
+
+  
+  {{#each userPosts}}
+  <a class="card-link" href="/post/{{this.id}}">
+    <div class="container container-my">
+      <div class="card shadow-sm">
+        <div class="card-body"> 
+          <img src="/images/{{this.picturePath}}" alt="no pic">
+          <p class="card-text">{{this.title}}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  {{/each}}
+</div>
+
