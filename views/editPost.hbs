@@ -1,20 +1,20 @@
-<form name="editForm" class="post-form" enctype="multipart/form-data">
+<form name="editForm" action="/post/{{postId}}/edit" class="post-form" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Card name</label>
-    <input name="postCardname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input name="postCardname" value="{{title}}" required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Cost</label>
-    <input name="postCost" type="text" class="form-control" id="exampleInputPassword1">
+    <input name="postCost" value="{{cost}}" required type="text" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Damage</label>
-    <input name="postDamage" type="text" class="form-control" id="exampleInputPassword1">
+    <input name="postDamage" value="{{damage}}" required type="text" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">City</label>
-    <select name="postCity" class="form-control" id="exampleInputPassword1">
-      <option disabled selected>Select city</option>
+    <select name="postCity" value="{{city}}" required class="form-control" id="exampleInputPassword1">
+      <option disabled>Select city</option>
       <option value="moscow">Moscow</option>
       <option value="spb">Saint-Petersburg</option>
     </select>

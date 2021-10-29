@@ -27,8 +27,17 @@ router
 
 router
   .route('/:postId/edit')
-  .get((req, res) => {
-    res.render('editPost'); // Прописать редирект
+  .get(async (req, res) => {
+    const { postId } = req.params;
+  //  ЗДЕСЬ ТРАЙ
+    const data = await Post.findOne({ where: { id: req.params.postId }, raw: true });
+    const {
+      title, damage, cost, city,
+    } = data;
+
+    res.render('editPost', {
+      postId, title, damage, cost, city, user: req.session.user,
+    }); // Прописать редирект
   })
   .put(async (req, res) => {
     let userPost;
