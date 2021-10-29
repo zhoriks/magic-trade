@@ -20,3 +20,16 @@
 .card-text {
   color: black;
 }
+
+.profile-container-body {
+  /* min-height: 950px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+  width: 265px;
+  /* height: 370px; */
+}
