@@ -18,11 +18,11 @@ router
     if (req.session.user?.id === post.UserId) {
       isSame = true;
       return res.render('viewPost', {
-        post, isSame, userEmail, user: req.session.user,
+        post, isSame, user: req.session.user,
       });
     }
     isSame = false;
-    return res.render('viewPost', { post, userEmail, user: req.session.user });
+    return res.render('viewPost', { post, user: req.session.user });
   });
 
 router
