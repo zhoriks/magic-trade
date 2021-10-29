@@ -10,7 +10,7 @@
   <a href="{{post.id}}/edit">
   <button class="btn btn-warning">Edit</button>
   </a>
-  <button class="btn btn-warning">Delete</button>
+  <button class="btn btn-warning delete-button"  id ={{post.id}}>Delete</button>
     {{else}}
       <form action="/cart/{{post.id}}" method="post" >
         <button type="submit" class="btn btn-warning">Add to cart</button>
