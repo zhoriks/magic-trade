@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     }
     res
       .clearCookie('user_sid')
-      .send({ mes: 'пользователь вышел' });
+      .redirect('/');
   });
 });
 
