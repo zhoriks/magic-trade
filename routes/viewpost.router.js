@@ -29,7 +29,7 @@ router
   .route('/:postId/edit')
   .get(async (req, res) => {
     const { postId } = req.params;
-  //  ЗДЕСЬ ТРАЙ
+    //  ЗДЕСЬ ТРАЙ
     const data = await Post.findOne({ where: { id: req.params.postId }, raw: true });
     const {
       title, damage, cost, city,
@@ -59,7 +59,7 @@ router
         error: {},
       });
     }
-    return res.json({ userPost });
+    return res.json({ userPost, userId: req.params.id });
   });
 
 // Добавить ПУТ и ДЕЛИТ
